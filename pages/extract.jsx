@@ -1,11 +1,9 @@
 import React from 'react'
+import Sidebar from '../components/Sidebar'
 
 export default function Extract() {
     return (
-        <div>
-            <h1>
-                extract
-            </h1>
-        </div>
+        <Sidebar>
+        </Sidebar>
     )
 }
