@@ -8,7 +8,6 @@ const SideBarContainer = styled.section`
     display: flex;
     flex-direction: column;
     width: 360px;
-    height: 450px;
     background-color: #242424;
 `;
 

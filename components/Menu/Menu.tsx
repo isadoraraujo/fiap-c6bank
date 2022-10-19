@@ -9,9 +9,22 @@ const MenuContainer = styled.nav`
     font-family: sans-serif;
     background-color: #242424;
     ul {
+        widht: 100%;
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        overflow-Y: auto;
+        &::webkit-scrollbar-thumb {
+            background-color: #242424;
+            outline: 1px solid #777777;
+        }
+        &::webkit-scrollbar {
+            width: 6px;
+        }
         li {
+            width: 100%;
             list-style: none;
             display: flex;
             line-height: 60px;
@@ -31,8 +44,7 @@ export default function Menu() {
         <ul>
             <li>
                 <Link href="#">
-                {/* <Icon type="inicio"/> */}
-                <a>Início</a>
+                    <a>Início</a>
                 </Link>
             </li>
             <li>Extrato</li>
